@@ -19,17 +19,17 @@ function Sidebar(){
 
 function Content(){
   return(
-    <div>
-    <div>
+    <div className='left-side'>
+    <div className='top'>
       <p>
-        This is not a real online service! You know you need something line this in your life to help you realize your deepest dreams. Signup <strong>now</strong> to get started.
+        This is not a real online service! You know you need something line this in your life to help you realize your deepest dreams. Signup <em>now</em> to get started.
       </p>
-      <p>You <strong>know</strong> you want to.</p>
+      <p>You <em>know</em> you want to.</p>
     </div>
-    <div >
+    <div className='data'>
       <form action="">
         <div className='middle'>
-          <p>Let's do this!</p>
+          <p className='header'>Let's do this!</p>
           <div className='info'>
             <div className='col1'>
               <div>
@@ -60,12 +60,13 @@ function Content(){
               </div>
             </div>
           </div>
-          
         </div>
         <button type="submit" id='create'>Create Account</button>
       </form>
     </div>
-    <div></div>
+    <div className='already'>
+      <p>Already have an account?<span><button id='login'>Log in</button></span></p>
+    </div>
     </div>
   );
 }
